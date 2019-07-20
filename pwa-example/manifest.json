@@ -1,7 +1,7 @@
 {
     "name": "pwa-example",
     "short_name": "pwa-example",
-    "theme_color": "#1976d2",
+    "theme_color": "#00ffff",
     "background_color": "#fafafa",
     "display": "standalone",
     "scope": "/",
