@@ -1,21 +1,49 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+  <h1>Mapa Oriundo</h1>  
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div>
+  <aol-map [width]="'100%'" [height]="'100vw'" style="background-color: lightgrey">
+    <aol-interaction-draw type="Point"></aol-interaction-draw>
+    <aol-interaction-default></aol-interaction-default>
+    <aol-view [zoom]="4">
+        <aol-coordinate [x]="-45.89279472860653" [y]="-23.196065627947135" [srid]="'EPSG:4326'"></aol-coordinate>
+    </aol-view>
+    <aol-layer-tile>
+        <aol-source-osm></aol-source-osm>
+    </aol-layer-tile>
+    <aol-layer-vector>
+      <aol-source-vector>
+          <aol-overlay>
+              <aol-coordinate
+                  [x]="-45.89279472860653"
+                  [y]="-23.196065627947135"
+                  [srid]="'EPSG:4326'"
+              >
+              </aol-coordinate>
+              <aol-content>
+                  <div class="my-overlay-class">
+                      <h1>Overlay</h1>
+                  </div>
+              </aol-content>
+          </aol-overlay>
+          <aol-feature>
+              <aol-geometry-point>
+                  <aol-coordinate [x]="-45.89279472860653" [y]="-23.196065627947135" [srid]="'EPSG:4326'"></aol-coordinate>
+              </aol-geometry-point>
+              <aol-style>
+                  <aol-style-circle [radius]="10">
+                      <!-- <aol-style-stroke [color]="'black'" [width]="'10'"></aol-style-stroke> -->
+                      <aol-style-fill [color]="'blue'"></aol-style-fill>
+                  </aol-style-circle>
+              </aol-style>
+          </aol-feature>
+      </aol-source-vector>  
+    </aol-layer-vector>    
+  </aol-map>
+</div>
+<div style="text-align:center">
+  <img width="45px" alt="Logo oriundo" src="./icon-72x72.png">
+</div>
 
 <router-outlet></router-outlet>
