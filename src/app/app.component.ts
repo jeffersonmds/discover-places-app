@@ -8,11 +8,11 @@ import { MapComponent, FeatureComponent } from 'ngx-openlayers';
 })
 export class AppComponent implements OnInit{  
   @ViewChild(MapComponent, {static: false}) map : MapComponent;
-  public longitude : number = -45.89279472860653;
-  public latitude : number = -23.196065627947135;
+  public longitude : number = Math.random() * (180 - (-180)) + (-180);// -45.89279472860653;
+  public latitude : number = Math.random() * (90 - (-90)) + (-90); // -23.196065627947135;
   
   ngOnInit(): void {
-    
+    console.log("Latitude: " + this.latitude + "\nLongitude: " + this.longitude);
   }
    
 
