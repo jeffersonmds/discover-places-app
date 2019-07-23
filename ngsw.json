@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1563594928730,
+  "timestamp": 1563846269107,
   "index": "/pwa-example/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "/pwa-example/favicon.ico",
         "/pwa-example/index.html",
-        "/pwa-example/main-es2015.b3e4703954dad64b26de.js",
-        "/pwa-example/main-es5.d1c1d472a12f95627b97.js",
+        "/pwa-example/main-es2015.acf94f23322228c6975b.js",
+        "/pwa-example/main-es5.7bfc2b0ef6ce95cf2e60.js",
         "/pwa-example/polyfills-es2015.4d31cca2afc45cfd85b5.js",
         "/pwa-example/polyfills-es5.2219c87348e60efc0076.js",
         "/pwa-example/runtime-es2015.703a23e48ad83c851e49.js",
@@ -48,9 +48,9 @@
     "/pwa-example/assets/icons/icon-72x72.png": "972bb018cbc20a3f48036aa270c8630eee42bcb9",
     "/pwa-example/assets/icons/icon-96x96.png": "b85d092341a98a627cbb796f257c3941fae0281b",
     "/pwa-example/favicon.ico": "44285da2f05aabb6e267b20a17bd05720b3a80d9",
-    "/pwa-example/index.html": "bb34063b0485dc9bc20cc4c498c727e05f48ca27",
-    "/pwa-example/main-es2015.b3e4703954dad64b26de.js": "be4ce42baa1858fb582e7ff4f8e8809cc4188795",
-    "/pwa-example/main-es5.d1c1d472a12f95627b97.js": "566e23d781d9702dacaba10ebaee26b13adb25a7",
+    "/pwa-example/index.html": "7adc769fcc6a17d46c8b8e6fd9f5b1f286863449",
+    "/pwa-example/main-es2015.acf94f23322228c6975b.js": "1d2fbe7c1b53296b5a591ce110f441339afda298",
+    "/pwa-example/main-es5.7bfc2b0ef6ce95cf2e60.js": "f167c8849e3d7a01e6434dee917e356864c0bb2a",
     "/pwa-example/polyfills-es2015.4d31cca2afc45cfd85b5.js": "058203dab4ba87056d6976029ba60fa42e6f75b9",
     "/pwa-example/polyfills-es5.2219c87348e60efc0076.js": "6c9688c6586bfcf669879655ba5874ef1d2b4bcf",
     "/pwa-example/runtime-es2015.703a23e48ad83c851e49.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
