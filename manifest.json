@@ -1,8 +1,8 @@
 {
-    "name": "pwa-example",
-    "short_name": "pwa-example",
-    "theme_color": "#00ffff",
-    "background_color": "#fafafa",
+    "name": "Discover Places App",
+    "short_name": "Discover Places",
+    "theme_color": "#1DBDCF",
+    "background_color": "#9DF5FF",
     "display": "standalone",
     "scope": "/",
     "start_url": "./",
