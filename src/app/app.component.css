@@ -1,4 +1,9 @@
 div {
-    -webkit-align-items: center; /* Safari 7.0+ */
-    align-items: center;
-  }
+  -webkit-align-items: center; /* Safari 7.0+ */
+  align-items: center;
+}
+
+.title-center {
+  flex: 1 1 auto;
+  text-align: center;
+}

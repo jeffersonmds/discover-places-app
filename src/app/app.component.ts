@@ -8,10 +8,14 @@ import { MapComponent, FeatureComponent } from 'ngx-openlayers';
 })
 export class AppComponent implements OnInit{  
   @ViewChild(MapComponent, {static: false}) map : MapComponent;
-  public longitude : number = Math.random() * (180 - (-180)) + (-180);// -45.89279472860653;
-  public latitude : number = Math.random() * (90 - (-90)) + (-90); // -23.196065627947135;
+  public longitude : number;// -45.89279472860653;
+  public latitude : number; // -23.196065627947135;
+  public mapZoom : number;
+  public dotColor : string = 'blue';
   
   ngOnInit(): void {
+    this.onGetRandomClick();
+    this.setMapZoom();
     console.log("Latitude: " + this.latitude + "\nLongitude: " + this.longitude);
   }
    
@@ -23,12 +27,34 @@ export class AppComponent implements OnInit{
     // const map = event.map;
   }
 
+  setMapZoom(value : number = 0){
+    switch(value){
+      case 0:
+        this.mapZoom = 3;
+        break;
+      case 1:
+        this.mapZoom = 12;
+        break;
+      case -1:
+        this.mapZoom = 1;
+        break;
+    }
+  }
+
+  onGetRandomClick(){
+    this.dotColor = 'blue';
+    this.latitude = Math.random() * (90 - (-90)) + (-90);
+    this.longitude = Math.random() * (180 - (-180)) + (-180);
+    console.log("Latitude: " + this.latitude + "\nLongitude: " + this.longitude);
+  }
+
   onGetLocalizationClick(){
     if (window.navigator && window.navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         location => {
           this.latitude = Number(location.coords.latitude.toPrecision());
           this.longitude = Number(location.coords.longitude.toPrecision());
+          this.dotColor = 'green';
         },
         error => {
           switch (error.code) {
