@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1563936834749,
+  "timestamp": 1564363576733,
   "index": "/discover-places-app/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "/discover-places-app/favicon.ico",
         "/discover-places-app/index.html",
-        "/discover-places-app/main-es2015.bb065e898a8712fc97ff.js",
-        "/discover-places-app/main-es5.731d4434a139ee8ec5cf.js",
+        "/discover-places-app/main-es2015.9f5a1df5c12a2d899744.js",
+        "/discover-places-app/main-es5.79044c82c966ea273fb0.js",
         "/discover-places-app/polyfills-es2015.4d31cca2afc45cfd85b5.js",
         "/discover-places-app/polyfills-es5.2219c87348e60efc0076.js",
         "/discover-places-app/runtime-es2015.703a23e48ad83c851e49.js",
@@ -48,9 +48,9 @@
     "/discover-places-app/assets/icons/icon-72x72.png": "972bb018cbc20a3f48036aa270c8630eee42bcb9",
     "/discover-places-app/assets/icons/icon-96x96.png": "b85d092341a98a627cbb796f257c3941fae0281b",
     "/discover-places-app/favicon.ico": "44285da2f05aabb6e267b20a17bd05720b3a80d9",
-    "/discover-places-app/index.html": "1ec9da8f4f18b97dc4107bb39cd38d5bd3c665e8",
-    "/discover-places-app/main-es2015.bb065e898a8712fc97ff.js": "f1c15124a0d0250e3ffb8ca6f7b7cf2fd36051f8",
-    "/discover-places-app/main-es5.731d4434a139ee8ec5cf.js": "b7ecc2d8b93ef3a635c928ae8691c3e89493908d",
+    "/discover-places-app/index.html": "265e69543688f306d08dee30b1748b566f18e0d0",
+    "/discover-places-app/main-es2015.9f5a1df5c12a2d899744.js": "c3ef0ae02f023b521c1bbeb5e17e50155cf07a48",
+    "/discover-places-app/main-es5.79044c82c966ea273fb0.js": "76bc5c15ddc9dceabe022ccbede930288fa245f1",
     "/discover-places-app/polyfills-es2015.4d31cca2afc45cfd85b5.js": "058203dab4ba87056d6976029ba60fa42e6f75b9",
     "/discover-places-app/polyfills-es5.2219c87348e60efc0076.js": "6c9688c6586bfcf669879655ba5874ef1d2b4bcf",
     "/discover-places-app/runtime-es2015.703a23e48ad83c851e49.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
