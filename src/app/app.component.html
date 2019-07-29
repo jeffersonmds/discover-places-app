@@ -1,17 +1,18 @@
-<mat-toolbar>
+<mat-toolbar color="primary">
   <img width="40px" alt="Logo" src="../assets/icons/icon-72x72.png">
+  <!-- <img width="40px" alt="Logo" src="./icon-72x72.png"> -->
   <span class="title-center">Discover Places</span> 
 </mat-toolbar>
 <br>
 <div style="text-align:center">
-  <button mat-raised-button type="button" style="width: 50%;" (click)="onGetRandomClick()">Pick a random place</button>
-  <button mat-raised-button type="button" style="width: 50%;" (click)="onGetLocalizationClick()">Get my localization</button>
+  <button mat-raised-button color="primary" style="width: 45%; margin: 5px;" (click)="onGetRandomClick()">Pick a random place</button>
+  <button mat-raised-button color="primary" style="width: 45%; margin: 5px;" (click)="onGetLocalizationClick()">Get my localization</button>
 </div>
 <div>
-  <aol-map #map [width]="'100%'" [height]="'100vw'" (onSingleClick)="onMapClick($event)" style="background-color: lightgrey">
+  <aol-map #map [width]="'100%'" [height]="'100'" (onSingleClick)="onMapClick($event)" style="background-color: lightgrey">
     <!-- <aol-interaction-draw type="Point"></aol-interaction-draw> -->
     <aol-interaction-default></aol-interaction-default>
-    <aol-view [zoom]="mapZoom">
+    <aol-view [zoom]="mapZoom" [minZoom] ="2.5" [maxZoom] ="20">
         <aol-coordinate [x]="longitude" [y]="latitude" [srid]="'EPSG:4326'"></aol-coordinate>
     </aol-view> 
     <aol-layer-tile>
@@ -32,7 +33,7 @@
                   <aol-coordinate [x]="longitude" [y]="latitude" [srid]="'EPSG:4326'"></aol-coordinate>
               </aol-geometry-point>
               <aol-style>
-                  <aol-style-circle [radius]="10">
+                  <aol-style-circle [radius]="5">
                       <!-- <aol-style-stroke [color]="'black'" [width]="'10'"></aol-style-stroke> -->
                       <aol-style-fill [color]="dotColor"></aol-style-fill>
                   </aol-style-circle>
@@ -41,8 +42,10 @@
       </aol-source-vector>  
     </aol-layer-vector>    
   </aol-map>
-  <button mat-raised-button type="button" style="width: 50%;" (click)="setMapZoom(1)">Zoom in</button>
-  <button mat-raised-button type="button" style="width: 50%;" (click)="setMapZoom(-1)">Zoom out</button>
+  <div style="text-align:center">
+    <button mat-raised-button color="primary" style="width: 45%; margin: 5px;" (click)="setMapZoom(1)">Zoom in</button>
+    <button mat-raised-button color="primary" style="width: 45%; margin: 5px;" (click)="setMapZoom(-1)">Zoom out</button>
+  </div>
 </div>
 
 <router-outlet></router-outlet>
